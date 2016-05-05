@@ -4,21 +4,34 @@
 }
 
 body {
-  background: #ef5285;
+  background: #60c5ba;
   height: 100vh;
   font-family: 'Open Sans Condensed';
   font-weight: 300;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  transition: background 2s;
+}
+
+.clearfix {
+  clear: both;
 }
 
 .quote-container {
   width: 500px;
   background: white;
   border-radius: 10px;
-  padding: 50px;
+  padding: 30px 50px 20px;
   box-shadow: 6px 6px 10px 1px rgba(0, 0, 0, 0.2);
+  transform: rotate(1.5deg);
+  transition: transform 0.5s;
+}
+
+.rotate {
+  transform: rotate(358.5deg);
+  transition: transform 0.5s;
 }
 
 .quote {
@@ -46,7 +59,7 @@ body {
   font-style: italic;
   font-size: 25px;
   text-align: right;
-  margin-top: -30px;
+  margin-top: 5px;
 }
 
 .author::before {
@@ -54,7 +67,7 @@ body {
 }
 
 .quote-buttons {
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .social-buttons {
@@ -73,12 +86,25 @@ body {
 
 .next-quote {
   padding: 10px 20px;
-  background: #ef5285;
+  background: #60c5ba;
   border-radius: 5px;
   color: white;
   text-decoration: none;
   font-size: 25px;
+  font-weight: bold;
   font-family: 'Open Sans Condensed';
   text-transform: uppercase;
   letter-spacing: 1px;
+  transition: background 2s;
+}
+
+.copyright {
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.copyright a {
+  color: white;
 }
